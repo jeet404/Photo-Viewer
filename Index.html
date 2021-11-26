@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>WelCome to MCU</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</head>
+<body>
+	<div class="header">
+		<a href="#home" class="logo">Marvel.cinema</a>
+		<div class="rightmenu">
+			<a href="#FB">Facebook</a>
+			<a href="#IG">Insta</a>
+			<a href="#TW">Twitter</a>
+			<a href="#SP">Spotify</a>
+		</div>
+	</div>
+    <marquee direction="left" style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'">
+    ...Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU......Welcome to the MCU...
+    </marquee>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">Music</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <!--
+    <div class="img">
+    </div>-->
+    <div class="row">
+        <div class="lst">
+            <div class="column">
+                <img src="Images/iron_man_in_avengers_infinity_war_4k_8k-7680x4320.jpg" alt="test" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Images/chris_evans_as_captain_america_avengers_infinity_war_4k_8k-7680x4320.jpg" alt="test" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Images/thor_in_avengers_infinity_war_chris_hemsworth_4k_8k-7680x4320.jpg" alt="test"  onclick="myFunction(this);">
+            </div>
+        </div>
+        <div class="frm">
+        <!--<iframe src="" name="img" scrolling="no"></iframe>-->
+            <img id="expandedImg" style="width:100%">
+        </div>
+    </div>
+    <div class="footer">
+       <div class="cpy">
+            <p>©Devloped by JAP</p>
+        </div>
+    </div>
+</body>
+</html>

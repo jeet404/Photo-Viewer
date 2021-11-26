@@ -1,0 +1,160 @@
+body{
+	background-color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header{
+	overflow: hidden;
+    background-color: slategray;
+    padding: 20px 10px;
+}
+
+.header a.logo {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.header a {
+    float: left;
+    color: azure;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.rightmenu {
+    float: right;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+.header a:hover {
+    background-color: indianred;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	line-height: 22px;
+	background-color: #333;
+	display: flex;
+	justify-content: flex-end;
+}
+
+li {
+  	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "amatic-sc";
+}
+
+li a:hover {
+  	background-color: slategray;
+}
+
+.column {
+    width: 50%;
+    padding: 6px;
+    height: 160px;
+    margin:6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 600px) {
+    .lst {
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+    }
+}
+
+.lst{
+    float: left;
+    align-content: center;
+    margin-top: 0px;
+    width: 25%;
+    display: inline-block;
+    
+}
+
+.frm{
+    float: right;
+    width: 75%;
+    display: inline-block;
+}
+
+/*
+.frm iframe{
+    height: 500px;
+    width: 100%;
+    display: block;
+    border: none;
+    overflow: hidden;
+}
+*/
+
+img{
+    max-height: 100%;
+    width: 100%;
+    border-radius:50% 50% 50% 50%;
+}
+
+/*
+.inner{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+*/
+
+@media (max-height:2000px){    
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: #45a1ff;
+        color: black;
+        width: 100%;
+    }
+}
+
+.cpy{
+    float: right;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica, Arial", "sans-serif";
+}
+
+.cpy p{
+    float: right;
+    display: block;
+    text-decoration: none;
+}
